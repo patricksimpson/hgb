@@ -3,6 +3,7 @@ gulp        = require("gulp")
 browserSync = require("browser-sync")
 reload      = browserSync.reload
 harp        = require("harp")
+markdown    = require("gulp-markdown-to-json")
 
 gulp.task "serve", ->
   harp.server __dirname,
@@ -29,9 +30,18 @@ gulp.task "serve", ->
       reload()
       return
 
-    return
+    gulp.watch ["posts/_*.md"], ->
+      reload()
+      return
 
+    return
   return
 
+gulp.task "markdown", ->
+  gulp.src("./posts/*.md").pipe(markdown(
+    pedantic: true
+    smartypants: true
+  )).pipe gulp.dest("./posts")
+  return
 
-gulp.task "default", ["serve"]
+gulp.task "default", ["serve", "markdown"]
