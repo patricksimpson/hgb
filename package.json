@@ -12,6 +12,7 @@
     "coffee-gulp": "0.0.2",
     "coffee-script": "^1.8.0",
     "gulp": "^3.8.9",
+    "gulp-front-matter": "^1.0.0",
     "gulp-util": "^3.0.1",
     "harp": "^0.14.0"
   },
