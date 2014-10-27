@@ -80,7 +80,6 @@ gulp.task 'post-compile', ->
     data = JSON.parse(fs.readFileSync(file, 'utf8'))
     gulp.src('app/_layout-posts.jade')
       .pipe(rename('app/posts/' + filename + '.jade'))
-      .pipe(replace('%FILE%', filename))
       .pipe(replace('%BODY%', data.body))
       .pipe(gulp.dest('./'))
 
