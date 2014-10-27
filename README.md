@@ -15,7 +15,7 @@ You have been warned. Not ready for use yet.
 
 ## Config and Content
 
-### Post Template
+### Posts Template
 
 You'll need to modify or change the `_layout-post.jade` file. This is the "template" for you posts, and will be used as such. The tag `%BODY%` is used as a replacement for the rendered markdown content from your posts. `%BODY%` must be left intact, but you can move it to wherever you want your post body content to appear.
 
