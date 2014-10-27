@@ -1,2 +1,12 @@
-h1 Welcome to Harp.
-h3 This is yours to own. Enjoy.
+h1 Harp Gulp BrowserSync -- Blog Eninge with <3
+h2 This is yours to own. Enjoy.
+
+div Posts
+  ul
+  for post, slug in public.posts._data
+    li
+      div
+        a(href="/posts/#{ slug }")= post.title
+      div Posted:
+        span= post.date
+      div= post.synopsis
