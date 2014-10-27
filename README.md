@@ -1,10 +1,10 @@
-# Harp, Gulp, BrowserSync blog engine
+# Harp, Gulp, BrowserSync: Blog Engine
 
-## Intro
+## Introduction
 
-So I started playing with Harp.js and I really liked it. However, only (alone) harp was a dull, mostly because you have to maintain your own data file, to populate your blog listing, etc. This project's goal is to automate the process of maintaining the blog data files, and let harp do everything else. 
+So I started playing with Harp.js and I really liked it. With Harp alone, have to maintain your own data files to populate your blog listing, etc.. This project's goal is to automate the process of maintaining the blog data files, and let harp do everything else. 
 
-Therefore, this project is a gulp wrapper for harp + browsersync, with automated posts!
+Therefore, this project is a Gulp wrapper for Harp + BrowserSync, with automated posts!
 
 ###Warning: This is a work in progress
 You have been warned. Not ready for use yet.
