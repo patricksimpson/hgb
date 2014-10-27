@@ -15,6 +15,7 @@
     "event-stream": "^3.1.7",
     "glob": "^4.0.6",
     "gulp": "^3.8.9",
+    "gulp-concat-util": "^0.5.1",
     "gulp-extend": "^0.2.0",
     "gulp-markdown-to-json": "^0.2.1",
     "gulp-rename": "^1.2.0",
